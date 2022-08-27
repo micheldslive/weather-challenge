@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
+  images: {
+    domains: ['localhost', 'files-books.ioasys.com.br', 'd2drtqy2ezsot0.cloudfront.net'],
+  },
 }
-
-module.exports = nextConfig
