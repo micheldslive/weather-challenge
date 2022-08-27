@@ -1,0 +1,10 @@
+@import '../utils/';
+
+.titleContent {
+  h2 {
+    @include text($white, 30, $fontThin, 100%, left, uppercase, 100);
+  }
+  p {
+    font-size: 12px;
+  }
+}
