@@ -1,0 +1,44 @@
+@mixin font-size($size-value: $font-size) {
+  font-size: $size-value + px;
+  font-size: calc($size-value / $font-size) + rem;
+}
+
+//  Define a base da fonte que pretende utilizar (valores ja são convertidos em rem).
+//  @mixin Font Size
+//  @section Font
+//  @param $size-value Seta o tamanho da fonte definido na variavel '$font-size'
+//  @example
+//    @include font-size($font-size);
+//    @include font-size(16);
+
+$font-size: 16; // tamanho padrão
+$line-height: 16; // tamanho padrão
+
+@mixin line-height($size-value: $line-height) {
+  line-height: $size-value + px;
+  line-height: calc($size-value / $line-height) + rem;
+}
+
+@mixin letter-spacing($letterspacing) {
+  letter-spacing: calc($letterspacing / 1000) * 1em;
+}
+
+//  @include text($black, 16, $fontRegular, 100%, left, initial, 100);
+
+@mixin text(
+  $color: $black,
+  $fontSize: $font-size,
+  $fontWeight: $fontRegular,
+  $line-height: $line-height,
+  $textAlign: left,
+  $textTransform: initial,
+  $letterspacing: $letterspacing
+) {
+  color: $color;
+  @include font-size($fontSize);
+  font-weight: $fontWeight;
+  @include line-height($line-height);
+  @include letter-spacing($letterspacing);
+  text-align: $textAlign;
+  text-transform: $textTransform;
+}
