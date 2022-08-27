@@ -1,6 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
-import NextSeo from '../mocks/next-seo.config'
+import NextSeo from '@/mocks/next-seo.config'
 
 class MyDocument extends Document {
   render() {
