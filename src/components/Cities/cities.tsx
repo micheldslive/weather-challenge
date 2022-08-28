@@ -5,19 +5,19 @@ import { cities } from '../../mocks/'
 export const Cities = () => {
   const router = useRouter()
 
-  const handleClick = (city: string, country: string) => {
+  const handleClick = (slug: string) => {
     router.push({
-      pathname: '/[city]',
-      query: { city: `${city},${country}` },
+      pathname: '/[slug]',
+      query: { slug },
     })
   }
 
   return (
     <div className={style.citiesContent}>
-      {cities.map(({ id, city, country }) => (
-        <a onClick={() => handleClick(city, country)} key={id.toString()}>
-          {city}
-        </a>
+      {cities.map(({ id, slug, name }) => (
+        <button onClick={() => handleClick(slug)} key={id.toString()}>
+          {name}
+        </button>
       ))}
     </div>
   )
