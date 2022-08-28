@@ -7,7 +7,7 @@ export default {
     site_name: 'Weather Challange | Front-End',
     images: [
       {
-        url: 'http://localhost:3000/img/ioasys-open-graph.png',
+        url: 'http://localhost:3000/img/image.png',
         width: 2560,
         height: 1440,
         alt: 'Weather Challenge',
