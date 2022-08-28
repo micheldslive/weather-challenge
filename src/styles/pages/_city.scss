@@ -1,0 +1,26 @@
+.content {
+  background-color: $black;
+  .container {
+    height: 100vh;
+    @include flex(center, center, column, 3rem);
+
+    @import '../components/cities.module.scss';
+    @import '../components/title.module.scss';
+    @import '../components/temperature.module.scss';
+  }
+}
+
+.content.light {
+  .container {
+    svg, h1, p, span {
+      fill: $white;
+    }
+  }
+}
+.content.dark {
+  .container {
+    svg, h1, p, span {
+      fill: $black;
+    }
+  }
+}

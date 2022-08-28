@@ -1,9 +1,0 @@
-@import '../utils/';
-
-.content {
-  background-color: $black;
-  .container {
-    height: 100vh;
-    @include flex(center, center, column, 3rem);
-  }
-}
