@@ -1,2 +1,2 @@
 export * from './cities'
-export * from './next-seo.config'
+export * from './next-seo'

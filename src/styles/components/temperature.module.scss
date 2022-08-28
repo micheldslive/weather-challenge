@@ -1,0 +1,8 @@
+@import '../utils/';
+
+.temperature {
+  margin: 0 auto;
+  h1 {
+    @include text($white, 130, $fontLight, 130, center, uppercase, 120);
+  }
+}
