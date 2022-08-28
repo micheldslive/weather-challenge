@@ -2,8 +2,7 @@ import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import nextSeoConfig from '@/mocks/next-seo'
-import '@/styles/globals/globals.scss'
-import '@/styles/_app.scss'
+import '@/styles/index.scss'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

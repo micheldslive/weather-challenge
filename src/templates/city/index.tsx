@@ -1,6 +1,7 @@
 import { Temperatures } from '@/components/Temperatures'
 import { Title } from '@/components/Title'
 import { IWeatherData } from '@/core/types'
+import { ConditionIcon } from '@/components/ConditionIcon'
 
 type CityProps = {
   data: IWeatherData
@@ -11,7 +12,7 @@ export const City = ({ data }: CityProps) => {
   const { maxtemp_c, mintemp_c } = forecast.forecastday[0].day
 
   return (
-    <div className='content dark'>
+    <div className='content light'>
       <div className='container'>
         <Title name={location.name} text={current.condition.text} />
         <Temperatures
@@ -19,6 +20,7 @@ export const City = ({ data }: CityProps) => {
           maxtemp_c={maxtemp_c}
           mintemp_c={mintemp_c}
         />
+        <ConditionIcon />
       </div>
     </div>
   )

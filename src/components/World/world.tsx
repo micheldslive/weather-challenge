@@ -1,9 +1,9 @@
-import Image from '../../assets'
+import Image from '../../mocks/images'
 
 export const World = () => {
   return (
     <div className='worldContent'>
-      <p>{Image['world']}</p>
+      <p>{Image['all']['world']}</p>
     </div>
   )
 }
