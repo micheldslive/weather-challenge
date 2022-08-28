@@ -121,3 +121,12 @@ interface IWeatherForecastHour {
   gust_kph: number
   uv: number
 }
+
+export interface ITemperature extends IMaxMin {
+  temp_c?: number
+}
+
+export interface IMaxMin {
+  maxtemp_c?: number
+  mintemp_c?: number
+}
