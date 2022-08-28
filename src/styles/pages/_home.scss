@@ -1,0 +1,11 @@
+.homeContent {
+  background-color: $black;
+  .homeContainer {
+    height: 100vh;
+    @include flex(center, center, column, 3);
+
+    @import '../components/title.module.scss';
+    @import '../components/cities.module.scss';
+    @import '../components/world.module.scss';
+  }
+}

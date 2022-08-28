@@ -1,5 +1,4 @@
-import style from '@/styles/pages/home.module.scss'
-import { Temperature } from '@/components/Temperature'
+import { Temperatures } from '@/components/Temperatures'
 import { Title } from '@/components/Title'
 import { IWeatherData } from '@/core/types'
 
@@ -12,10 +11,10 @@ export const City = ({ data }: CityProps) => {
   const { maxtemp_c, mintemp_c } = forecast.forecastday[0].day
 
   return (
-    <div className={`${style.content} ${style.dark}`}>
-      <div className={style.container}>
+    <div className='content dark'>
+      <div className='container'>
         <Title name={location.name} text={current.condition.text} />
-        <Temperature
+        <Temperatures
           temp_c={current.temp_c}
           maxtemp_c={maxtemp_c}
           mintemp_c={mintemp_c}

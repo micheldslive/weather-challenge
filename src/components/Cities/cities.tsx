@@ -1,4 +1,3 @@
-import style from '@/styles/components/cities.module.scss'
 import { useRouter } from 'next/router'
 import { cities } from '../../mocks/'
 
@@ -13,7 +12,7 @@ export const Cities = () => {
   }
 
   return (
-    <div className={style.citiesContent}>
+    <div className='citiesContent'>
       {cities.map(({ id, slug, name }) => (
         <a onClick={() => handleClick(slug)} key={id.toString()}>
           {name}
