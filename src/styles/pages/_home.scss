@@ -4,8 +4,12 @@
     height: 100vh;
     @include flex(center, center, column, 3);
 
-    @import '../components/title.module.scss';
-    @import '../components/cities.module.scss';
-    @import '../components/world.module.scss';
+    @import '../components/title';
+    @import '../components/world';
+    @import '../components/cities';
+  }
+
+  * {
+    color: $white;
   }
 }

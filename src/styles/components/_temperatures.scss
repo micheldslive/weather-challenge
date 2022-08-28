@@ -7,14 +7,13 @@
     margin: 0 auto;
     h1 {
       margin-top: -8px;
-      @include text($white, 135, $fontLight, 135, center, uppercase, 100);
+      @include text('', 135, $fontLight, 135, center, uppercase, 100);
     }
   }
   .temperatureDetails {
-    color: white;
     @include flex('', space-between, column, 1);
     .tempCelcious {
-      @include text($white, 30, $fontLight, 30, right, '', 2);
+      @include text('', 30, $fontLight, 30, right, '', 2);
     }
   }
   .maxminContent {
@@ -22,7 +21,6 @@
     svg {
       max-width: 8px;
       width: 100%;
-      fill: $white;
       opacity: 0.6;
     }
   
@@ -31,7 +29,7 @@
       height: 80%;
   
       & > span {
-        @include text($white, 20, $fontThin, 12, center, uppercase, 80);
+        @include text('', 20, $fontThin, 12, center, uppercase, 80);
       }
     }
   }

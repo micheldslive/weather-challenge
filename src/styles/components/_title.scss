@@ -1,0 +1,9 @@
+.titleContent {
+  margin: 0 auto;
+  h2 {
+    @include text('', 48, $fontLight, 50, center, uppercase, 120);
+  }
+  p {
+    @include text('', 38, $fontThin, 50, center, lowercase, 60);
+  }
+}

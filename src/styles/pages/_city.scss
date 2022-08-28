@@ -1,26 +1,24 @@
 .content {
   background-color: $black;
+  transition: 0.3s;
   .container {
     height: 100vh;
-    @include flex(center, center, column, 3rem);
+    @include flex(center, center, column, 3);
 
-    @import '../components/cities.module.scss';
-    @import '../components/title.module.scss';
-    @import '../components/temperature.module.scss';
+    @import '../components/title';
+    @import '../components/temperatures';
   }
-}
 
-.content.light {
-  .container {
-    svg, h1, p, span {
+  &.light {
+    * {
       fill: $white;
+      color: $white;
     }
   }
-}
-.content.dark {
-  .container {
-    svg, h1, p, span {
+  &.dark {
+    * {
       fill: $black;
+      color: $black;
     }
   }
 }
