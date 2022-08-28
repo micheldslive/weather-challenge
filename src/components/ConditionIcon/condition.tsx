@@ -1,8 +1,8 @@
 import Image from '../../mocks/images'
 
-export const World = () => {
+export const ConditionIcon = () => {
   return (
-    <div className='worldContent'>
+    <div className='conditionContent'>
       <p>{Image['all']['world']}</p>
     </div>
   )
