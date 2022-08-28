@@ -9,5 +9,6 @@ module.exports = {
   bail: 1,
   moduleNameMapper: {
     '^.+\\.(css|less|scss)$': 'babel-jest',
+    '\\.svg$': '<rootDir>/.jest/svg.ts',
   },
 }
