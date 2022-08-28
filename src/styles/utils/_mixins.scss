@@ -47,10 +47,20 @@ $line-height: 16; // tamanho padrão
   display: flex;
   align-items: $align;
   justify-content: $justify;
-  gap: $gap;
+  gap: $gap + rem;
   @if ($direction) {
     flex-direction: $direction;
   } @else {
     flex-direction: row;
+  }
+}
+
+// @include grid(grid-template-columns, 3, 3, 1);
+
+@mixin grid($grid-type, $num-of-cols, $row-gap, $column-gap: $row-gap) {
+  @supports (display: grid) {
+    display: grid;
+    #{$grid-type}: repeat($num-of-cols, auto);
+    grid-gap: ($row-gap + rem) ($column-gap + rem);
   }
 }
