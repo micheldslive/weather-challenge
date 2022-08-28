@@ -15,9 +15,9 @@ export const Cities = () => {
   return (
     <div className={style.citiesContent}>
       {cities.map(({ id, slug, name }) => (
-        <button onClick={() => handleClick(slug)} key={id.toString()}>
+        <a onClick={() => handleClick(slug)} key={id.toString()}>
           {name}
-        </button>
+        </a>
       ))}
     </div>
   )

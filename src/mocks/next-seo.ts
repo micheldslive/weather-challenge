@@ -16,6 +16,6 @@ export default {
   },
   linkedin: {
     handle: '@micheldslive',
-    site: '@site',
+    site: 'https://weather-tds.vercel.app/',
   },
 }

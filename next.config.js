@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'weather-tds.vercel.app'],
   },
   webpack(config) {
     config.module.rules.push({

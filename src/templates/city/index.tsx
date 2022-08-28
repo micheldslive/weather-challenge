@@ -1,30 +1,25 @@
 import style from '@/styles/pages/home.module.scss'
-import { useEffect } from 'react'
-import { Temperature } from '../../components/Temperature'
-import { Title } from '../../components/Title'
-import { IWeatherData } from '../../core/types'
+import { Temperature } from '@/components/Temperature'
+import { Title } from '@/components/Title'
+import { IWeatherData } from '@/core/types'
 
-type PageProps = {
+type CityProps = {
   data: IWeatherData
 }
 
-export const City = ({ data }: PageProps) => {
-  const { current, location } = data
+export const City = ({ data }: CityProps) => {
+  const { current, forecast, location } = data
+  const { maxtemp_c, mintemp_c } = forecast.forecastday[0].day
 
-  useEffect(() => {
-    //console.log(data)
-  }, [data])
   return (
-    <div className={style.content}>
+    <div className={`${style.content} ${style.dark}`}>
       <div className={style.container}>
         <Title name={location.name} text={current.condition.text} />
-        <div className={style.TemperatureContainer}>
-          <Temperature temp_c={current.temp_c} />
-          <div className={style.TemperatureDetails}>
-            <span>C</span>
-            <span>MIN MAX</span>
-          </div>
-        </div>
+        <Temperature
+          temp_c={current.temp_c}
+          maxtemp_c={maxtemp_c}
+          mintemp_c={mintemp_c}
+        />
       </div>
     </div>
   )
