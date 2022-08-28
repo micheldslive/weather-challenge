@@ -1,5 +1,4 @@
 @mixin font-size($size-value: $font-size) {
-  font-size: $size-value + px;
   font-size: calc($size-value / $font-size) + rem;
 }
 
@@ -15,7 +14,6 @@ $font-size: 16; // tamanho padrão
 $line-height: 16; // tamanho padrão
 
 @mixin line-height($size-value: $line-height) {
-  line-height: $size-value + px;
   line-height: calc($size-value / $line-height) + rem;
 }
 
@@ -23,7 +21,7 @@ $line-height: 16; // tamanho padrão
   letter-spacing: calc($letterspacing / 1000) * 1em;
 }
 
-//  @include text($black, 16, $fontRegular, 100%, left, initial, 100);
+//  @include text(color, font-size, font-weight, line-height, text-align, text-transform, letter-spacing);
 
 @mixin text(
   $color: $black,
@@ -41,4 +39,18 @@ $line-height: 16; // tamanho padrão
   @include letter-spacing($letterspacing);
   text-align: $textAlign;
   text-transform: $textTransform;
+}
+
+//  @include flex(align-items, justify-content, flex-direction, gap);
+
+@mixin flex($align, $justify, $direction, $gap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+  @if ($direction) {
+    flex-direction: $direction;
+  } @else {
+    flex-direction: row;
+  }
 }
