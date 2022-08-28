@@ -1,10 +1,11 @@
 @import '../utils/';
 
 .titleContent {
+  margin: 0 auto;
   h2 {
-    @include text($white, 30, $fontThin, 100%, left, uppercase, 100);
+    @include text($white, 48, $fontLight, 50, center, uppercase, 120);
   }
   p {
-    font-size: 12px;
+    @include text($white, 38, $fontThin, 50, center, lowercase, 60);
   }
 }

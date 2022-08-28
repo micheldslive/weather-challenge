@@ -1,0 +1,16 @@
+@import '../utils/';
+
+.citiesContent {
+  margin: 25px auto 0;
+  max-width: 650px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  text-align: center;
+  a {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+  }
+}
