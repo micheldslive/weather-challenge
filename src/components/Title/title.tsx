@@ -8,8 +8,8 @@ type TitleProps = {
 export const Title = ({ name, main }: TitleProps) => {
   return (
     <div className={style.titleContent}>
-      <h2>{name || 'Weather'}</h2>
-      <p>{main || 'select a city'}</p>
+      <h2 aria-label='title'>{name || 'Weather'}</h2>
+      <p aria-label='subtitle'>{main || 'select a city'}</p>
     </div>
   )
 }
