@@ -6,11 +6,9 @@
   max-width: 650px;
   width: 100%;
   text-align: center;
-  button {
-    color: white;
-    font-size: 40px;
-    font-weight: 200;
-    background: none;
-    border: none;
+  a {
+    @include text($white, 40, $fontThin, 40, '', '', 30);
+    cursor: pointer;
   }
+  
 }
