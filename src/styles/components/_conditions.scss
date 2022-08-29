@@ -17,7 +17,7 @@
       max-width: 50px;
     }
     p {
-      @include text('', 22, $fontThin, 45, center, '', 40);
+      @include text('', 22, $fontLight, 45, center, '', 40);
     }
     span {
       @include text('', 18, $fontLight, 30, center, '', 60);
