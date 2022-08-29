@@ -1,34 +1,119 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  🌈 WEATHER CHALLENGE
+</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="Weather" src="https://img.shields.io/static/v1?label=weather&message=challenge&color=success&labelColor=grey">
+  
+  <img alt="Next" src="https://img.shields.io/static/v1?label=stack&message=nextjs&color=success&labelColor=grey">
+  
+  <img alt="Portfolio" src="https://img.shields.io/static/v1?label=portfolio&message=MICODE&color=success&labelColor=grey">
+</p>
 
-First, run the development server:
+## 💻 Sobre
+
+Projeto realizado para teste de Front-End. O objetivo da aplicação é criar uma página que, ao escolher uma cidade, leia as informações do clima dela através de uma API.
+
+<h4 align="center">Layout (invision): <a href="https://explosion.invisionapp.com/public/share/SX19J12TJR#screens/476656918">https://explosion.invisionapp.com/public/share/SX19J12TJR#screens/476656918.</a></h4>
+
+<p align="center">
+  <img src="./.github/demo.gif" />
+</p>
+
+<h4 align="center"><a href="https://weather-tds.netlify.app/">Clique aqui para ver o projeto no netlify.</a></h4>
+
+---
+
+### 🚀 Tecnologias
+
+O projeto foi desenvolvido com as seguintes tecnologias:
+
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SASS](https://sass-lang.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [classnames](https://www.npmjs.com/package/classnames)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://github.com/typicode/husky)
+- [Axios](https://axios-http.com/)
+- [Docker](https://www.docker.com/)
+- [framer-motion](https://www.framer.com/motion/)
+
+---
+
+### ▶️ Executando o projeto
+
+Siga os seguintes passos para poder utilizar a aplicação em sua máquina.
+
+1. Clone a aplicação em sua máquina local com os seguintes comandos:
+
+```bash
+git clone https://github.com/micheldslive/weather-challenge.git
+```
+
+2. Depois, vá até o diretório do seu projeto utilizando o comando
+
+```bash
+cd weather-challenge
+```
+
+3. Instale as dependências:
+
+```bash
+yarn install
+# ou
+npm install
+```
+
+4. Rode sua aplicação em sua [conexão local](http://localhost:3000)
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## ▶️ Executando o projeto (Docker)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+##### Com o Docker devidamente instalado e o repositório Clonado, Execute o comando abaixo:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+docker compose up
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 📚 Testes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para realizar os testes rode os seguinte comando
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run test
+# ou
+yarn test
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Desenvolvedor<br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/micheldslive">
+        <img src="https://avatars.githubusercontent.com/u/55795597?v=4" width="100" alt="Foto no GitHub"/><br>
+        <sub>
+          <b>Michel Domingos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+### 🖊️ Licença
+
+O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.
