@@ -1,8 +1,10 @@
 .content {
   transition: 0.3s;
+  height: 100vh;
   .container {
     overflow: auto;
-    height: 100vh;
+    height: 100%;
+    padding: 4rem 0;
     @include flex(center, center, column, 3, '');
 
     @import '../components/backButton';
