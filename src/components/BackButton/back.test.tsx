@@ -1,7 +1,7 @@
 import { getRenderer } from '@/core/tests/helpers'
 import { BackButton } from '.'
 
-describe('<ConditionIcon />', () => {
+describe('<BackButton />', () => {
   it.each(['button'])('should have a %p element', (expected) => {
     const { getByLabelText } = useRenderer
 

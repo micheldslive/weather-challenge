@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import { Temperatures } from '.'
 
-describe('<Temperature />', () => {
+describe('<Temperatures />', () => {
   it.each(['temperature title'])('should have a %p element', () => {
     const { getByRole } = getRender()
     expect(getByRole('heading', { level: 1 })).toBeInTheDocument()
