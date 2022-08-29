@@ -27,11 +27,11 @@
   }
   &.dark {
     * {
-      fill: $black;
-      color: $black;
+      fill: $black-text;
+      color: $black-text;
     }
     .envContent > span {
-      background-color: $black;
+      background-color: $black-text;
     }
   }
 

@@ -1,7 +1,11 @@
 .conditionContent {
   margin: 0 auto;
+  transition: ease-in-out 0.3s;
   svg {
     max-width: 180px;
     width: 100%;
+  }
+  &:hover {
+    transform: scale(1.1);
   }
 }

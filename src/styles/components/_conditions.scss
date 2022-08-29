@@ -7,11 +7,15 @@
   @include flex(center, center, '', 3.5, wrap);
 
   .conditionsCard {
+    transition: ease-in-out 0.3s;
+    margin: 0 auto;
+    text-align: center;
+    &:hover {
+      transform: translateY(-8px);
+    }
     svg {
       max-width: 50px;
     }
-    margin: 0 auto;
-    text-align: center;
     p {
       @include text('', 22, $fontThin, 45, center, '', 40);
     }
