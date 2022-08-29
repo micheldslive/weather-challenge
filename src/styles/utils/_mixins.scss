@@ -1,14 +1,10 @@
+// @include font-size($font-size);
+// @include font-size(16);
 @mixin font-size($size-value: $font-size) {
   font-size: calc($size-value / $font-size) + rem;
 }
 
-//  Define a base da fonte que pretende utilizar (valores ja são convertidos em rem).
-//  @mixin Font Size
-//  @section Font
-//  @param $size-value Seta o tamanho da fonte definido na variavel '$font-size'
-//  @example
-//    @include font-size($font-size);
-//    @include font-size(16);
+// Define a base da fonte que pretende utilizar (valores ja são convertidos em rem).
 
 $font-size: 16; // tamanho padrão
 $line-height: 16; // tamanho padrão
@@ -66,6 +62,8 @@ $line-height: 16; // tamanho padrão
   }
 }
 
+// @include ps(position, top, left, button, right);
+
 @mixin ps($position, $top, $left, $button, $right) {
   position: $position;
   top: $top;
@@ -73,6 +71,8 @@ $line-height: 16; // tamanho padrão
   bottom: $button;
   right: $right;
 }
+
+// @include ps(color1, color2);
 
 @mixin gradient($color1, $color2) {
   background: linear-gradient(0deg, $color2 0%, $color1 100%);
@@ -84,6 +84,8 @@ $breakpoints: (
   '1024': 1024px,
   '1280': 1280px,
 );
+
+// @include ps(color1, color2);
 
 @mixin mq($width, $type: min) {
   @if map_has_key($breakpoints, $width) {
