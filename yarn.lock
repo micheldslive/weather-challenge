@@ -1621,6 +1621,13 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/classnames@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.3.1.tgz#3c2467aa0f1a93f1f021e3b9bcf938bd5dfdc0dd"
+  integrity sha512-zeOWb0JGBoVmlQoznvqXbE0tEC/HONsnoUNH19Hc96NFsTAwTXbTqb8FMYkru1F/iqp7a18Ws3nWJvtA1sHD1A==
+  dependencies:
+    classnames "*"
+
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
@@ -1659,6 +1666,13 @@
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
+
+"@types/moment@^2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@types/moment/-/moment-2.13.0.tgz#604ebd189bc3bc34a1548689404e61a2a4aac896"
+  integrity sha512-DyuyYGpV6r+4Z1bUznLi/Y7HpGn4iQ4IVcGn8zrr1P4KotKLdH0sbK1TFR6RGyX6B+G8u83wCzL+bpawKU/hdQ==
+  dependencies:
+    moment "*"
 
 "@types/node@*", "@types/node@^18.7.13":
   version "18.7.13"
@@ -2226,6 +2240,11 @@ cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
+
+classnames@*, classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
 
 clean-stack@^2.0.0:
   version "2.2.0"
@@ -4219,6 +4238,11 @@ minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
   dependencies:
     brace-expansion "^1.1.7"
+
+moment@*, moment@^2.29.4:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.1.2:
   version "2.1.2"
