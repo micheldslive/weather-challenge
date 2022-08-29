@@ -1,0 +1,26 @@
+.envContent {
+  @include flex(center, center, '', 1, wrap);
+
+  & > span {
+    @include mq('480', max) {
+      display: none;
+    }
+
+    margin-top: -8px;
+    height: 35px;
+    width: 1px;
+    background-color: white;
+    opacity: 0.4;
+  }
+
+  .envCard {
+    margin: 0 auto;
+    text-align: center;
+    p {
+      @include text('', 22, $fontThin, 20, center, '', 40);
+    }
+    span {
+      @include text('', 18, $fontLight, 50, center, '', 60);
+    }
+  }
+}
