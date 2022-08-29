@@ -1,4 +1,6 @@
-export const conditionDay = {
+import { IMapedString } from '@/core/types'
+
+export const conditionDay: IMapedString = {
   1000: 113,
   1003: 116,
   1006: 116,
