@@ -43,7 +43,7 @@ $line-height: 16; // tamanho padrão
 
 //  @include flex(align-items, justify-content, flex-direction, gap);
 
-@mixin flex($align, $justify, $direction, $gap) {
+@mixin flex($align, $justify, $direction, $gap, $wrap) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
@@ -53,6 +53,7 @@ $line-height: 16; // tamanho padrão
   } @else {
     flex-direction: row;
   }
+  flex-wrap: $wrap;
 }
 
 // @include grid(grid-template-columns, 3, 3, 1);
@@ -75,4 +76,23 @@ $line-height: 16; // tamanho padrão
 
 @mixin gradient($color1, $color2) {
   background: linear-gradient(0deg, $color2 0%, $color1 100%);
+}
+
+$breakpoints: (
+  '360': 360px,
+  '480': 480px,
+  '1024': 1024px,
+  '1280': 1280px,
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
 }

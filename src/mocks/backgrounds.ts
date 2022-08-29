@@ -3,9 +3,8 @@ type BgProps = {
 }
 
 export const background: BgProps = {
-  1: 'darkgrey dark',
-  2: 'grey light',
-  3: 'darkblue light',
-  4: 'blue light',
-  5: 'black light',
+  0: 'darkgrey dark',
+  1: 'grey light',
+  2: 'darkblue light',
+  3: 'blue light',
 }
