@@ -1,9 +1,11 @@
 .content {
   transition: 0.3s;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   .container {
+    height: inherit;
+    min-height: inherit;
     overflow: auto;
-    height: 100%;
     padding: 4rem 0;
     @include flex(center, center, column, 3, '');
 
@@ -27,11 +29,11 @@
   }
   &.dark {
     * {
-      fill: $black;
-      color: $black;
+      fill: $black-text;
+      color: $black-text;
     }
     .envContent > span {
-      background-color: $black;
+      background-color: $black-text;
     }
   }
 
