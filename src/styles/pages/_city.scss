@@ -1,12 +1,13 @@
 .content {
-  background-color: $black;
   transition: 0.3s;
   .container {
     height: 100vh;
     @include flex(center, center, column, 3);
 
+    @import '../components/backButton';
     @import '../components/title';
     @import '../components/temperatures';
+    @import '../components/condition';
   }
 
   &.light {
@@ -20,5 +21,18 @@
       fill: $black;
       color: $black;
     }
+  }
+
+  &.grey {
+    @include gradient($grey-1, $grey-2);
+  }
+  &.darkgrey {
+    @include gradient($grey-3, $grey-4);
+  }
+  &.darkblue {
+    @include gradient($dark-blue-1, $dark-blue-2);
+  }
+  &.blue {
+    @include gradient($turquoise-1, $turquoise-2);
   }
 }

@@ -64,3 +64,15 @@ $line-height: 16; // tamanho padrão
     grid-gap: ($row-gap + rem) ($column-gap + rem);
   }
 }
+
+@mixin ps($position, $top, $left, $button, $right) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $button;
+  right: $right;
+}
+
+@mixin gradient($color1, $color2) {
+  background: linear-gradient(0deg, $color2 0%, $color1 100%);
+}
