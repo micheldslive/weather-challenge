@@ -1,3 +1,4 @@
+import { IImage } from '@/core/types'
 import WorldIcon from '../assets/world-icon.svg'
 import BackIcon from '../assets/back-button.svg'
 import MaxMinIcon from '../assets/max-min-arrows.svg'
@@ -22,17 +23,7 @@ import Night263 from '../assets/night/263.svg'
 import Night326 from '../assets/night/326.svg'
 import Night389 from '../assets/night/389.svg'
 
-type MapedType = {
-  [key: string]: JSX.Element
-}
-
-type TImage = {
-  day: MapedType
-  night: MapedType
-  all: MapedType
-}
-
-const Image: TImage = {
+const Image: IImage = {
   day: {
     113: <Day113 />,
     116: <Day116 />,

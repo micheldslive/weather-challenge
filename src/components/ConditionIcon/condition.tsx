@@ -1,9 +1,18 @@
+import { conditionDay } from '../../mocks/conditionNames'
 import Image from '../../mocks/images'
 
-export const ConditionIcon = () => {
+interface IConditionIcon {
+  is_day?: number
+  code?: number
+}
+
+export const ConditionIcon = ({ is_day, code }: IConditionIcon) => {
+  const selectedCondition = conditionDay[code ? code : 1000]
+  const isDay = is_day ? 'day' : 'night'
+
   return (
     <div className='conditionContent'>
-      <p>{Image['all']['world']}</p>
+      <p>{Image[isDay][selectedCondition]}</p>
     </div>
   )
 }

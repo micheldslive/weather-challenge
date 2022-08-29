@@ -19,6 +19,7 @@ interface IWeatherCurrent {
   last_updated: string
   temp_c: number
   temp_f: number
+  is_day: number
   condition: IWeatherCurrentCondition
   wind_mph: number
   wind_kph: number
@@ -129,4 +130,17 @@ export interface ITemperature extends IMaxMin {
 export interface IMaxMin {
   maxtemp_c?: number
   mintemp_c?: number
+}
+
+export interface IMapedString {
+  [key: number]: number
+}
+export interface IMapedJSX {
+  [key: string]: JSX.Element
+}
+
+export interface IImage {
+  day: IMapedJSX
+  night: IMapedJSX
+  all: IMapedJSX
 }
