@@ -15,10 +15,10 @@
   .envCard {
     margin: 0 auto;
     text-align: center;
-    p {
+    .title {
       @include text('', 22, $fontThin, 20, center, '', 40);
     }
-    span {
+    .subtitle {
       @include text('', 18, $fontLight, 50, center, '', 60);
     }
   }

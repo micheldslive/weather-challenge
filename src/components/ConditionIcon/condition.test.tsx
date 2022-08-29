@@ -1,9 +1,9 @@
-import { render } from '@testing-library/react'
+import { getRenderer } from '@/core/tests/helpers'
 import { ConditionIcon } from '.'
 
 describe('<ConditionIcon />', () => {
   it.each(['svg'])('should have a %p element', (expected) => {
-    const { queryAllByText } = getRenderer()
+    const { queryAllByText } = useRenderer
 
     const titles = queryAllByText(expected)
 
@@ -13,6 +13,4 @@ describe('<ConditionIcon />', () => {
   })
 })
 
-function getRenderer() {
-  return render(<ConditionIcon />)
-}
+const useRenderer = getRenderer(<ConditionIcon />)

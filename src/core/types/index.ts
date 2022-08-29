@@ -142,5 +142,5 @@ export interface IMapedJSX {
 export interface IImage {
   day: IMapedJSX
   night: IMapedJSX
-  all: IMapedJSX
+  default: IMapedJSX
 }

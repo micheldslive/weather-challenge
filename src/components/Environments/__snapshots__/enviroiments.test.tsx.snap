@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EnvCard /> should render the title and subtitle correctly 1`] = `
+<div
+  class="envCard"
+>
+  <p
+    aria-label="title"
+    class="title"
+  />
+  <span
+    aria-label="subtitle"
+    class="subtitle"
+  />
+</div>
+`;

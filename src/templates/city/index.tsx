@@ -5,8 +5,8 @@ import { IWeatherData } from '@/core/types'
 import { ConditionIcon } from '@/components/ConditionIcon'
 import { BackButton } from '@/components/BackButton'
 import { Enviroiments } from '@/components/Environments'
-import { background } from '../../mocks/backgrounds'
-import { Conditions } from '../../components/Conditions'
+import { background } from '@/mocks'
+import { Conditions } from '@/components/Conditions'
 
 type CityProps = {
   data: IWeatherData

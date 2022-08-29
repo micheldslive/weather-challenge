@@ -2,17 +2,14 @@ import { render } from '@testing-library/react'
 import { World } from '.'
 
 describe('<World />', () => {
-  it.each(['svg'])('should have a %p element', (expected) => {
-    const { queryAllByText } = getRenderer()
+  it.each(['svg'])('should have a %p element', () => {
+    const { getByLabelText } = getRenderer()
 
-    const titles = queryAllByText(expected)
-
-    titles.map((title) => {
-      expect(title).toBeInTheDocument()
-    })
+    const svg = getByLabelText('world')
+    expect(svg).toBeInTheDocument()
   })
 })
 
-function getRenderer() {
+const getRenderer = () => {
   return render(<World />)
 }

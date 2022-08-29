@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { cities } from '../../mocks/'
+import { cities } from '@/mocks/'
 
 export const Cities = () => {
   const router = useRouter()

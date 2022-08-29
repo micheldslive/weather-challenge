@@ -1,5 +1,5 @@
-import { IWeatherForecastHour } from '../../core/types'
-import { ConditionCard } from './conditionCard'
+import { IWeatherForecastHour } from '@/core/types'
+import { ConditionsCard } from './conditionsCard'
 
 type ConditionsProps = {
   hours: IWeatherForecastHour[]
@@ -19,7 +19,7 @@ export const Conditions = ({ hours }: ConditionsProps) => {
   return (
     <div className='conditionsContent'>
       {down && (
-        <ConditionCard
+        <ConditionsCard
           title='down'
           temp_c={down.temp_c}
           is_day={down.is_day}
@@ -27,7 +27,7 @@ export const Conditions = ({ hours }: ConditionsProps) => {
         />
       )}
       {morning && (
-        <ConditionCard
+        <ConditionsCard
           title='morning'
           temp_c={morning.temp_c}
           is_day={morning.is_day}
@@ -35,7 +35,7 @@ export const Conditions = ({ hours }: ConditionsProps) => {
         />
       )}
       {afternoon && (
-        <ConditionCard
+        <ConditionsCard
           title='afternoon'
           temp_c={afternoon.temp_c}
           is_day={afternoon.is_day}
@@ -43,7 +43,7 @@ export const Conditions = ({ hours }: ConditionsProps) => {
         />
       )}
       {night && (
-        <ConditionCard
+        <ConditionsCard
           title='night'
           temp_c={night.temp_c}
           is_day={night.is_day}
