@@ -87,7 +87,7 @@ interface IWeatherForecastAstro {
   moon_illumination: string
 }
 
-interface IWeatherForecastHour {
+export interface IWeatherForecastHour {
   time_epoch: number
   time: string
   temp_c: number
