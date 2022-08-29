@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { WeatherAPI } from '@/core/api/Api'
 import { IWeatherData } from '@/core/types'
 import { City } from '@/templates/city'
-import { cities } from '../mocks'
+import { cities } from '@/mocks'
 
 type PageProps = {
   data: IWeatherData

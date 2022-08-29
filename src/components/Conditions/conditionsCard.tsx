@@ -1,4 +1,4 @@
-import { ConditionIcon } from '../ConditionIcon'
+import { ConditionIcon } from '@/components/ConditionIcon'
 
 type EnvCardProps = {
   title?: string
@@ -7,7 +7,7 @@ type EnvCardProps = {
   code?: number
 }
 
-export const ConditionCard = ({
+export const ConditionsCard = ({
   title,
   temp_c,
   is_day,
