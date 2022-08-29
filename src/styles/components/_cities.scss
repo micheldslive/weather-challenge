@@ -1,5 +1,13 @@
 .citiesContent {
-  @include grid('grid-template-columns', 3, 5, 2);
+  @include grid('grid-template-columns', 3, 5, 1);
+  @include mq('480', max) {
+    @include grid('grid-template-columns', 2, 5, 1);
+  }
+  @include mq('360', max) {
+    @include grid('grid-template-columns', 1, 1, 2);
+  }
+
+  padding: 0 15px;
   margin: 25px auto 0;
   max-width: 650px;
   width: 100%;

@@ -2,12 +2,13 @@
   transition: 0.3s;
   .container {
     height: 100vh;
-    @include flex(center, center, column, 3);
+    @include flex(center, center, column, 3, '');
 
     @import '../components/backButton';
     @import '../components/title';
     @import '../components/temperatures';
     @import '../components/condition';
+    @import '../components/enviroiments';
   }
 
   &.light {
