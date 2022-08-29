@@ -89,6 +89,10 @@ yarn dev
 docker compose up
 ```
 
+<p align="center">
+  <img src="./.github/demo-docker.gif" />
+</p>
+
 ---
 
 ### 📚 Testes
