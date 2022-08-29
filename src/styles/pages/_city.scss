@@ -1,6 +1,7 @@
 .content {
   transition: 0.3s;
   .container {
+    overflow: auto;
     height: 100vh;
     @include flex(center, center, column, 3, '');
 
@@ -8,6 +9,7 @@
     @import '../components/title';
     @import '../components/temperatures';
     @import '../components/condition';
+    @import '../components/conditions';
     @import '../components/enviroiments';
   }
 
@@ -16,11 +18,18 @@
       fill: $white;
       color: $white;
     }
+
+    .envContent > span {
+      background-color: $white;
+    }
   }
   &.dark {
     * {
       fill: $black;
       color: $black;
+    }
+    .envContent > span {
+      background-color: $black;
     }
   }
 

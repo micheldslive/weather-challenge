@@ -1,6 +1,7 @@
 .homeContent {
   background-color: $black;
   .homeContainer {
+    overflow: auto;
     height: 100vh;
     @include flex(center, center, column, 3, '');
 

@@ -1,0 +1,22 @@
+.conditionsContent {
+  padding: 0 15px;
+  @include mq('480', max) {
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+  @include flex(center, center, '', 3.5, wrap);
+
+  .conditionsCard {
+    svg {
+      max-width: 50px;
+    }
+    margin: 0 auto;
+    text-align: center;
+    p {
+      @include text('', 22, $fontThin, 45, center, '', 40);
+    }
+    span {
+      @include text('', 18, $fontLight, 30, center, '', 60);
+    }
+  }
+}
