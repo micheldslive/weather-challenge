@@ -1,7 +1,3 @@
-export interface IWeatherAPI {
-  getDataByCity(city: string): Promise<IWeatherData>
-}
-
 export interface IWeatherData {
   location: IWeatherLocation
   current: IWeatherCurrent

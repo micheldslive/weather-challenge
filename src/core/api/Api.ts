@@ -12,7 +12,6 @@ export const WeatherAPI = () => {
       `forecast.json?key=${key}&days=1&aqi=no&alerts=no&q=${city}`,
     )
 
-    //if (!response.data) throw new Error(error.message)
     return response.data || null
   }
 
