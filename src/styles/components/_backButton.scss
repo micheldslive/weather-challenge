@@ -1,0 +1,15 @@
+.backContent {
+  @include ps(fixed, 40px, 30px, '', '');
+
+  a {
+    cursor: pointer;
+    &:hover svg {
+      transform: translateX(-8px);
+    }
+    svg {
+      transition: ease-in-out 0.3s;
+      max-width: 30px;
+      width: 100%;
+    }
+  }
+}
