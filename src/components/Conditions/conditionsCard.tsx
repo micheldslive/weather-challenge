@@ -17,7 +17,7 @@ export const ConditionsCard = ({
     <div className='conditionsCard'>
       <p aria-label='title'>{title}</p>
       <ConditionIcon is_day={is_day} code={code} />
-      <span aria-label='subtitle'>{temp_c} ºC</span>
+      <span aria-label='subtitle'>{temp_c && Math.round(temp_c)} ºC</span>
     </div>
   )
 }
