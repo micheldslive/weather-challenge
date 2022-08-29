@@ -24,6 +24,10 @@ Projeto realizado para teste de Front-End. O objetivo da aplicação é criar um
 
 ---
 
+<h4 align="center">API utilizada no projeto: <a href="https://www.weatherapi.com/">https://www.weatherapi.com/</a></h4>
+
+---
+
 ### 🚀 Tecnologias
 
 O projeto foi desenvolvido com as seguintes tecnologias:
