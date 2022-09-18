@@ -1,3 +1,11 @@
+// CHECK MIXIN
+@function check($value) {
+  @if not $value or $value == '' or $value == () or length($value) == 0 {
+    @return null;
+  }
+  @return $value;
+}
+
 // @include font-size($font-size);
 // @include font-size(16);
 @mixin font-size($size-value: $font-size) {
@@ -28,29 +36,32 @@ $line-height: 16; // tamanho padrão
   $textTransform: initial,
   $letterspacing: $letterspacing
 ) {
-  color: $color;
-  @include font-size($fontSize);
-  font-weight: $fontWeight;
-  @include line-height($line-height);
-  @include letter-spacing($letterspacing);
-  text-align: $textAlign;
-  text-transform: $textTransform;
+  color: check($color);
+  @include font-size(check($fontSize));
+  font-weight: check($fontWeight);
+  @include line-height(check($line-height));
+  @include letter-spacing(check($letterspacing));
+  text-align: check($textAlign);
+  text-transform: check($textTransform);
 }
 
 //  @include flex(align-items, justify-content, flex-direction, gap);
 
 @mixin flex($align, $justify, $direction, $gap, $wrap) {
   display: flex;
-  align-items: $align;
-  justify-content: $justify;
-  gap: $gap + rem;
-  @if ($direction) {
+  align-items: check($align);
+  justify-content: check($justify);
+  @if (check($gap)) {
+    gap: $gap + rem;
+  }
+  @if (check($direction)) {
     flex-direction: $direction;
   } @else {
     flex-direction: row;
   }
-  flex-wrap: $wrap;
+  flex-wrap: check($wrap);
 }
+
 
 // @include grid(grid-template-columns, 3, 3, 1);
 
@@ -58,18 +69,18 @@ $line-height: 16; // tamanho padrão
   @supports (display: grid) {
     display: grid;
     #{$grid-type}: repeat($num-of-cols, auto);
-    grid-gap: ($row-gap + rem) ($column-gap + rem);
+    grid-gap: (check($row-gap) + rem) (check($column-gap) + rem);
   }
 }
 
 // @include ps(position, top, left, button, right);
 
 @mixin ps($position, $top, $left, $button, $right) {
-  position: $position;
-  top: $top;
-  left: $left;
-  bottom: $button;
-  right: $right;
+  position: check($position);
+  top: check($top);
+  left: check($left);
+  bottom: check($button);
+  right: check($right);
 }
 
 // @include ps(color1, color2);
