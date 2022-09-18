@@ -14,10 +14,11 @@ type CityProps = {
 
 export const City = ({ data }: CityProps) => {
   const { current, forecast, location } = data
-  const { maxtemp_c, mintemp_c } = forecast.forecastday[0].day
-  const { sunrise, sunset } = forecast.forecastday[0].astro
+  const [day] = forecast.forecastday
+  const { maxtemp_c, mintemp_c } = day.day
+  const { sunrise, sunset } = day.astro
+  const hours = day.hour
   const randomNumber = Math.floor(Math.random() * 4)
-  const hours = forecast.forecastday[0].hour
 
   return (
     <div className={classNames('content', background[randomNumber])}>
