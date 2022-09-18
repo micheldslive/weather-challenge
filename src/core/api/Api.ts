@@ -3,8 +3,9 @@ import { IWeatherData } from '@/core/types'
 
 export const WeatherAPI = () => {
   const key = process.env.API_KEY
+  const baseURL = process.env.BASE_URL
   const api = axios.create({
-    baseURL: 'http://api.weatherapi.com/v1/',
+    baseURL,
   })
 
   const getDataByCity = async (city = 'Recife'): Promise<IWeatherData> => {
