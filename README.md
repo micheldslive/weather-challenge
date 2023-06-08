@@ -20,7 +20,7 @@ Projeto realizado para teste de Front-End. O objetivo da aplicação é criar um
   <img src="./.github/demo.gif" />
 </p>
 
-<h4 align="center"><a href="https://weather-tds.netlify.app/">Clique aqui para ver o projeto no netlify.</a></h4>
+<h4 align="center"><a href="https://weather-tds.vercel.app/">Clique aqui para ver o projeto no vercel.</a></h4>
 
 ---
 
